@@ -1,0 +1,16 @@
+:root {
+  --accent-text: #ccaed0;
+  --accent-text-dark: #9b7fa6; /* versión más oscura para mejor contraste */
+}
+
+
+
+.h-accent {
+  color: #ccaed0;
+  letter-spacing: 0.2px;
+}
+
+
+.body{
+    background-color: #70527c;
+}
