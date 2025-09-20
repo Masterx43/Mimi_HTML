@@ -11,20 +11,27 @@ enviado.addEventListener("click", (e) =>{
     let nombre = document.getElementById("text1").value
     let apellido = document.getElementById("textApellido").value
     let email = document.getElementById("txtEmail").value
-    if(nombre === "" || nombre.length <= 3) {
+
+    let vefCorreo = false
+    let vefNombre = false
+    let vefApellido = false
+
+    if(nombre === "" || nombre.length < 3) {
         errorNombre.innerText = "El nombre es obligatorio y debe tener al menos 3 caracteres"
         errorNombre.style.color = "red"
         errorNombre.style.fontWeight = "bold"
     } else {
         errorNombre.innerHTML = ""
+        vefNombre = true
     }
 
-    if (apellido === "" || apellido.length <= 3){
+    if (apellido === "" || apellido.length < 3){
         errorApellido.innerText = "El apellido no puede estar vacio y debe tener al menos 3 caracteres"
         errorApellido.style.color = "red"
         errorApellido.style.fontWeight = "bold"
     }else {
         errorApellido.innerText = ""
+        vefApellido = true
     }
 
 
@@ -33,18 +40,23 @@ enviado.addEventListener("click", (e) =>{
         errorEmail.innerText = "El campo no puede estar vacio"
         errorEmail.style.color = "red"
         errorEmail.style.fontWeight = "bold"
-        return
     } else {
         errorEmail.innerText = ""
+        vefCorreo = true
     }
 
-    let usuario = {
-        nombre : nombre,
-        apellido : apellido,
-        email : email
+
+    if (vefNombre && vefCorreo && vefApellido) {
+        let usuario = {
+            nombre : nombre,
+            apellido : apellido,
+            email : email
+        }
+        alert("Formulario enviado")
+        console.log(usuario)
+    } else {
+        return
     }
 
-    alert("Formulario enviado")
-
-    console.log(usuario)
+    
 })
