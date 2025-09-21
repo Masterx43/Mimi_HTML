@@ -21,3 +21,79 @@ body{
 .text-yellow{
     color: yellow;
 }
+
+/* Centrar el texto MIMI en el navbar */
+.navbar {
+    justify-content: center !important;
+    position: relative;
+}
+
+/* Opcional: mover los demás elementos (como los links) a la derecha */
+.navbar-collapse {
+    position: absolute;
+    right: 20px;
+}
+
+.navbar-brand {
+    margin-bottom: 10px;
+}
+
+.navbar-nav .nav-link {
+    font-size: 18px;
+    margin: 0 10px;
+}
+
+/* Cambiar color base de los nav-pills */
+.custom-pills .nav-link {
+  color: #fff;              /* texto normal */
+  background-color: #6f42c1; /* morado */
+}
+
+.custom-pills .nav-link.active {
+  color: #fff;              /* texto activo */
+  background-color: #d63384; /* fucsia */
+}
+
+/* Cambiar color del dropdown */
+.custom-pills .dropdown-menu {
+  background-color: #f8d7da; /* rosado claro */
+}
+
+.custom-pills .dropdown-item {
+  color: #721c24;           /* rojo oscuro */
+}
+.custom-pills .dropdown-item:hover {
+  background-color: #f5c6cb; /* hover rosado */
+}
+
+
+
+/* Texto de los tabs al pasar el mouse */
+#pillNav2 .nav-link:hover {
+  color: #d63384 !important;
+}
+
+/* Texto del tab activo al pasar el mouse */
+#pillNav2 .nav-link.active:hover {
+  color: #b02a6b !important;
+}
+
+
+
+
+
+
+
+
+
+/* Haz que el toggle del dropdown se vea como pill con CONTORNO rosado cuando esté activo/abierto */
+#pillNav2 .dropdown-toggle.active,
+#pillNav2 .dropdown.show > .dropdown-toggle,
+#pillNav2 .dropdown-toggle[aria-expanded="true"] {
+  border: 2px solid #d63384 !important;
+  color: #d63384 !important;
+  background-color: transparent !important;
+  border-radius: 50rem;
+}
+
+

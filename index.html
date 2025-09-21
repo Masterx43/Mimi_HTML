@@ -4,45 +4,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mimi</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-        <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
 
     <div class="container  cajita-fondo">
         <div class="row mt-1 ">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand " href="#">MIMI</a>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+                <a class="navbar-brand text-center " href="#">
+                    <img src="./assets/img/mimi.logo.webp" alt="logoMimi" height="100" class="me-2">
+                </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
+
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Servicios</a>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" href="#">Agendar</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Tienda</a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Usuario
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">Registro</a></li>
-                                <li><a class="dropdown-item" href="#">Iniciar Sesión</a></li>
-                            </ul>
-                        </li>
-                    </ul>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
                 </div>
             </nav>
         </div><!--fin row-->
+
+        <div class="row mt-3">
+            <div class="col">
+                <ul class="nav nav-pills nav-fill gap-2 p-1 small bg-light rounded-5 shadow-sm" id="pillNav2"
+                    role="tablist" style="--bs-nav-link-color: #242129;
+                    --bs-nav-pills-link-active-color: #ffffffe1;
+                    --bs-nav-pills-link-active-bg: #b83196f5;">
+
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active rounded-5" id="home-tab2" data-bs-toggle="tab"
+                            data-bs-target="#tab-home" type="button" role="tab" aria-controls="tab-home"
+                            aria-selected="true">Servicios</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link rounded-5" id="profile-tab2" data-bs-toggle="tab"
+                            data-bs-target="#tab-profile" type="button" role="tab" aria-controls="tab-profile"
+                            aria-selected="false">Agendar</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link rounded-5" id="contact-tab2" data-bs-toggle="tab"
+                            data-bs-target="#tab-contact" type="button" role="tab" aria-controls="tab-contact"
+                            aria-selected="false">Tienda</button>
+                    </li>
+                    <li class="nav-item dropdown" role="presentation">
+                        <button class="nav-link dropdown-toggle rounded-5" id="dropdown-tab" data-bs-toggle="dropdown"
+                            type="button" role="tab" aria-expanded="false">
+                            Usuario
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown-tab">
+                            <li>
+                                <button class="dropdown-item" id="extra1-tab" data-bs-toggle="tab"
+                                    data-bs-target="#tab-extra1" type="button" role="tab" aria-selected="false">
+                                    Registro
+                                </button>
+                            </li>
+                            <li>
+                                <button class="dropdown-item" id="extra2-tab" data-bs-toggle="tab"
+                                    data-bs-target="#tab-extra2" type="button" role="tab" aria-selected="false">
+                                    Iniciar Sesión
+                                </button>
+                            </li>
+                        </ul>
+            </div>
+        </div>
         <div class="row mt-4">
             <div class="col-xl-6 col-lg-6 col-md-8 col-sm-12 mx-auto">
                 <h2 class="text-center mb-3">Iniciar Sesión</h2>
@@ -78,7 +108,7 @@
             <div class="col-xl-3 col-md-3 col-sm-12 col-xs-12 text-center">
 
             </div><!--Fin row-->
-            <div class="row mx-auto mt-2">
+            <div class="row mx-auto mt-2 text-center">
                 <div class="col-xl-3 col-md-3 col-sm-12 col-xs-12 mt-2 mb-2">
                     <div class="card">
                         <img src="./assets/img/Manicure.webp" class="card-img-top" alt="Imagen manicure">
