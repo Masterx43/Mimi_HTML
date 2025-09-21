@@ -1,54 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MiMi</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+        <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-<body class="body">
-    <div class="container">
-        <div class="row d-flex justify-content-center">
-            <div class="col-xl-10 col-lg-10 col-md-10 col-sm-12 col-12 mx-auto">
-                <h1 class="text-center my-4 h-accent">Bienvenido a MIMI</h1>
-                <h2 class="text-center my-4">Por favor inicie sesion</h2>
-                <form>
+
+<body>
+
+    <div class="container  cajita-fondo">
+        <div class="row mt-1 ">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand " href="#">MIMI</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Servicios</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#">Agendar</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Tienda</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Usuario
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Registro</a></li>
+                                <li><a class="dropdown-item" href="#">Iniciar Sesión</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div><!--fin row-->
+        <div class="row mt-4">
+            <div class="col-xl-6 col-lg-6 col-md-8 col-sm-12 mx-auto">
+                <h2 class="text-center mb-3">Iniciar Sesión</h2>
+                <form id="formulario">
                     <div class="mb-3">
-                        <div class="row">
-                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 mx-auto">
-                                <label for="text1" class="form-label">Nombre</label>
-                                <label for="text1" id="lblErrorNombre" class="form-label"></label>
-                                <input type="text" class="form-control" id="text1">
-                            </div>
-                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 mx-auto">
-                                <label for="textApellido" class="form-label">Apellido</label>
-                                <label for="textApellido" id="lblErrorApellido" class="form-label"></label>
-                                <input type="text" class="form-control" id="textApellido">
-                            </div>
-                        </div>
+                        <label for="text1" class="form-label">
+                            <i class="fa-regular fa-user"></i>&nbsp;&nbsp;Nombre
+                        </label>
+                        <input type="text" class="form-control" id="text1">
+                        <small id="lblErrorNombre" class="text-yellow"></small>
                     </div>
+
                     <div class="mb-3">
-                        
+                        <label for="textApellido" class="form-label">Apellido</label>
+                        <input type="text" class="form-control" id="textApellido">
+                        <small id="lblErrorApellido" class="text-yellow"></small>
                     </div>
-                    
+
                     <div class="mb-3">
-                        <label for="txtEmail" class="form-label">Email</label>
-                        <label for="txtEmail" id="lblErrorEmail" class="form-label"></label>
-                        <div class="input-group">
-                            <span class="input-group-text" id="basic-addon1">@</span>
-                            <input type="text" class="form-control" id="txtEmail" placeholder="Ingrese su email">
-                        </div> 
+                        <label for="txtEmail" class="form-label">
+                            <i class="fa-regular fa-envelope"></i>&nbsp;&nbsp;Email
+                        </label>
+                        <input type="email" class="form-control" id="txtEmail" placeholder="Ingrese su email">
+                        <small id="lblErrorEmail" class="text-yellow"></small>
                     </div>
-                    <button id="btnEnviar" class="btn btn-primary">Iniciar sesion</button>
+
+                    <button id="btnEnviar" class="btn btn-primary">Iniciar sesión</button>
                 </form>
             </div>
         </div>
-    </div>
+
+        <div class="row mx-auto mt-2">
+            <div class="col-xl-3 col-md-3 col-sm-12 col-xs-12 text-center">
+
+            </div><!--Fin row-->
+            <div class="row mx-auto mt-2">
+                <div class="col-xl-3 col-md-3 col-sm-12 col-xs-12 mt-2 mb-2">
+                    <div class="card">
+                        <img src="./assets/img/Manicure.webp" class="card-img-top" alt="Imagen manicure">
+                        <div class="card-body">
+                            <h5 class="card-title">Manicure y Pedicure</h5>
+                            <p class="card-text">Cuidado profesional para tus manos y pies. Disfruta de una experiencia
+                                relajante con manicure y pedicure que incluye limpieza, hidratación y acabado impecable
+                                para lucir siempre radiante.</p>
+                            <a href="#" class="btn btn-success mt-auto">Ver más</a>
+                        </div>
+                    </div><!--fin card-->
+                </div><!--fin-col-->
+                <div class="col-xl-3 col-md-3 col-sm-12 col-xs-12 mt-2 mb-2">
+                    <div class="card">
+                        <img src="./assets/img/tratamientos-capilares.jpg" class="card-img-top"
+                            alt="Imagen de tratamiento capilar">
+                        <div class="card-body">
+                            <h5 class="card-title">Coloracion y Tratamientos Capilares</h5>
+                            <p class="card-text">Renueva tu estilo con servicios de coloración y tratamientos capilares.
+                                Cuida tu cabello mientras obtienes el tono perfecto, brillo duradero e hidratación
+                                profunda.</p>
+                            <a href="#" class="btn btn-success mt-auto">Ver más</a>
+                        </div>
+                    </div><!--fin card-->
+                </div><!--fin-col-->
+                <div class="col-xl-3 col-md-3 col-sm-12 col-xs-12 mt-2 mb-2">
+                    <div class="card">
+                        <img src="./assets/img/brushing y styling.webp" class="card-img-top" alt="Imagen de brushing">
+                        <div class="card-body">
+                            <h5 class="card-title">Brushing y styling</h5>
+                            <p class="card-text">Logra el look ideal con nuestros servicios de brushing y styling. Desde
+                                un liso perfecto hasta ondas definidas, realza tu estilo con acabado profesional y
+                                duradero.</p>
+                            <a href="#" class="btn btn-success mt-auto">Ver más</a>
+                        </div>
+                    </div><!--fin card-->
+                </div><!--fin-col-->
+            </div><!--Fin row-->
+        </div><!--fin container-->
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-<script src="./assets/js/main.js"></script> 
-<script ></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+            crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/bf539c3725.js" crossorigin="anonymous"></script>
+        <script src="./assets/js/main.js"></script>
 </body>
+
 </html>
