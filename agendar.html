@@ -2,12 +2,13 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mimi</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
+
 
 <body>
     <div class="container cajita-fondo">
@@ -15,14 +16,9 @@
         <div class="row mt-1">
             <nav class="navbar navbar-light bg-light w-100 px-3">
                 <a class="navbar-brand" href="index.html">
-                    <img src="./assets/img/mimi.logo.webp" alt="logoMimi" height="60">
+                    <img src="./assets/img/mimi.logo.webp" alt="logoMimi" height="60" />
                 </a>
-                <!-- Contador carrito -->
-                <button class="btn position-relative ms-auto" type="button" id="btnCart">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
-                        id="cartCount">0</span>
-                </button>
+
             </nav>
         </div>
         <!-- /NAVBAR -->
@@ -31,131 +27,334 @@
         <section class="mt-4">
             <h2 class="text-center mb-3">Agendar</h2>
             <div class="row g-4">
-                <!-- Producto 1 -->
+                <!-- Servicio 1 -->
                 <div class="col-12 col-md-6 col-xl-4">
                     <div class="card h-100">
-                        <img src="./assets/img/Manicure.webp" class="card-img-top fit" alt="Manicure">
+                        <img src="./assets/img/Manicure.webp" class="card-img-top fit" alt="Manicure" />
                         <div class="card-body text-center">
                             <h5 class="card-title">Pack Manicure</h5>
                             <p class="fw-bold mb-2">$12.990</p>
-                            <button class="btn botonRosado btn-add-to-cart" data-id="SKU-001" data-name="Pack Manicure"
-                                data-price="12990" data-img="./assets/img/Manicure.webp">Agregar al carrito</button>
+                            <button class="btn botonRosado btn-agendar" data-service="Pack Manicure"
+                                data-price="12990">Agendar</button>
                         </div>
                     </div>
                 </div>
-                <!-- Producto 2 -->
+
+                <!-- Servicio 2 -->
                 <div class="col-12 col-md-6 col-xl-4">
                     <div class="card h-100">
-                        <img src="./assets/img/tratamientos-capilares.jpg" class="card-img-top fit" alt="Tratamiento">
+                        <img src="./assets/img/tratamientos-capilares.jpg" class="card-img-top fit"
+                            alt="Tratamiento Capilar" />
                         <div class="card-body text-center">
                             <h5 class="card-title">Tratamiento Capilar</h5>
                             <p class="fw-bold mb-2">$18.990</p>
-                            <button class="btn botonRosado btn-add-to-cart" data-id="SKU-002"
-                                data-name="Tratamiento Capilar" data-price="18990"
-                                data-img="./assets/img/tratamientos-capilares.jpg">Agregar al carrito</button>
+                            <button class="btn botonRosado btn-agendar" data-service="Tratamiento Capilar"
+                                data-price="18990">Agendar</button>
                         </div>
                     </div>
                 </div>
-                <!-- Producto 3 -->
+
+                <!-- Servicio 3 -->
                 <div class="col-12 col-md-6 col-xl-4">
                     <div class="card h-100">
-                        <img src="./assets/img/brushing-y-styling.webp" class="card-img-top fit" alt="Brushing">
+                        <img src="./assets/img/brushing-y-styling.webp" class="card-img-top fit" alt="Brushing" />
                         <div class="card-body text-center">
-                            <h5 class="card-title">Brushing & Styling</h5>
+                            <h5 class="card-title">Brushing</h5>
                             <p class="fw-bold mb-2">$15.990</p>
-                            <button class="btn botonRosado btn-add-to-cart" data-id="SKU-003"
-                                data-name="Brushing & Styling" data-price="15990"
-                                data-img="./assets/img/brushing-y-styling.webp">Agregar al carrito</button>
+                            <button class="btn botonRosado btn-agendar" data-service="Brushing"
+                                data-price="15990">Agendar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Servicio 4 -->
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="card h-100">
+                        <img src="./assets/img/brushing-y-styling.webp" class="card-img-top fit" alt="Coloración" />
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Coloración</h5>
+                            <p class="fw-bold mb-2">$25.990</p>
+                            <button class="btn botonRosado btn-agendar" data-service="Coloración"
+                                data-price="25990">Agendar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Servicio 5 -->
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="card h-100">
+                        <img src="./assets/img/Manicure.webp" class="card-img-top fit" alt="Manicure" />
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Manicure</h5>
+                            <p class="fw-bold mb-2">$14.990</p>
+                            <button class="btn botonRosado btn-agendar" data-service="Manicure"
+                                data-price="14990">Agendar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Servicio 6 -->
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="card h-100">
+                        <img src="./assets/img/Manicure.webp" class="card-img-top fit" alt="Pedicure" />
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Pedicure</h5>
+                            <p class="fw-bold mb-2">$14.990</p>
+                            <button class="btn botonRosado btn-agendar" data-service="Pedicure"
+                                data-price="14990">Agendar</button>
                         </div>
                     </div>
                 </div>
             </div>
+
         </section>
-        <!-- /TIENDA -->
 
-        <!-- CARRITO SIMPLE (sección fija en la página) -->
-        <section class="mt-5">
-            <h3> Carrito</h3>
-            <ul class="list-group mb-3" id="cartItems">
-                <li class="list-group-item text-center text-muted">Tu carrito está vacío</li>
-            </ul>
-            <div class="d-flex justify-content-between align-items-center mb-3">
-                <strong>Total:</strong>
-                <strong id="cartTotal">$0</strong>
+        <!--FOrmulario de el agendar-->>
+        <section class="mt-5" id="reserva">
+            <h3>Reservar hora</h3>
+
+            <form id="bookingForm" class="row g-3">
+                <div class="col-12 col-md-6">
+                    <label class="form-label">Servicio</label>
+                    <input type="text" class="form-control" id="bkService" readonly>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <label class="form-label">Precio</label>
+                    <input type="text" class="form-control" id="bkPrice" readonly>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <label class="form-label">Fecha</label>
+                    <input type="date" class="form-control" id="bkDate" required>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <label class="form-label">Hora</label>
+                    <select class="form-select" id="bkTime" required disabled>
+                        <option value="" selected disabled>Selecciona hora</option>
+                    </select>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <label class="form-label">Nombre y Apellido</label>
+                    <input type="text" class="form-control" id="bkName" required>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <label class="form-label">Teléfono</label>
+                    <input type="tel" class="form-control" id="bkPhone" placeholder="+56 9 xxxx xxxx" required>
+                </div>
+
+                <div class="col-12">
+                    <label class="form-label">Correo</label>
+                    <input type="email" class="form-control" id="bkEmail" required>
+                </div>
+
+                <div class="col-12">
+                    <button type="submit" class="btn botonRosado">Confirmar reserva</button>
+                </div>
+            </form>
+
+            <div class="alert alert-success mt-3 d-none" id="bkOk">
+                ¡Reserva creada! Te contactaremos para confirmarte. ✅
             </div>
-            <div class="d-flex gap-2">
-                <button class="btn btn-outline-secondary" id="btnEmptyCart">Vaciar</button>
-                <button class="btn botonRosado" id="btnCheckout">Pagar</button>
+            <div class="alert alert-danger mt-3 d-none" id="bkErr">
+                Revisa los datos del formulario (no atendemos domingos y debes elegir una hora válida).
             </div>
         </section>
-    </div><!-- /container -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://kit.fontawesome.com/bf539c3725.js" crossorigin="anonymous"></script>
 
-    <script>
-        (() => {
-            const CURRENCY = new Intl.NumberFormat('es-CL', { style: 'currency', currency: 'CLP', maximumFractionDigits: 0 });
-            let cart = [];
+        <!-- /container -->
 
-            const els = {
-                cartCount: document.getElementById('cartCount'),
-                cartItems: document.getElementById('cartItems'),
-                cartTotal: document.getElementById('cartTotal'),
-                btnEmpty: document.getElementById('btnEmptyCart'),
-                btnCheckout: document.getElementById('btnCheckout')
-            };
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://kit.fontawesome.com/bf539c3725.js" crossorigin="anonymous"></script>
 
-            function renderCart() {
-                els.cartItems.innerHTML = '';
-                if (cart.length === 0) {
-                    els.cartItems.innerHTML = '<li class="list-group-item text-center text-muted">Tu carrito está vacío</li>';
-                } else {
-                    cart.forEach(item => {
-                        const li = document.createElement('li');
-                        li.className = 'list-group-item d-flex justify-content-between align-items-center';
-                        li.innerHTML = `
+        <script>
+            (() => {
+                const CLP = new Intl.NumberFormat('es-CL', { style: 'currency', currency: 'CLP', maximumFractionDigits: 0 });
+
+                const els = {
+                    service: document.getElementById('bkService'),
+                    price: document.getElementById('bkPrice'),
+                    date: document.getElementById('bkDate'),
+                    time: document.getElementById('bkTime'),
+                    name: document.getElementById('bkName'),
+                    phone: document.getElementById('bkPhone'),
+                    email: document.getElementById('bkEmail'),
+                    form: document.getElementById('bookingForm'),
+                    ok: document.getElementById('bkOk'),
+                    err: document.getElementById('bkErr'),
+                };
+
+                // Click en "Agendar" → precarga servicio y precio + baja al formulario
+                document.addEventListener('click', (e) => {
+                    const btn = e.target.closest('.btn-agendar');
+                    if (!btn) return;
+                    const service = btn.dataset.service || 'Servicio';
+                    const price = Number(btn.dataset.price) || 0;
+
+                    els.service.value = service;
+                    els.price.value = CLP.format(price);
+
+                    // fecha mínima = hoy
+                    const today = new Date();
+                    const y = today.getFullYear();
+                    const m = String(today.getMonth() + 1).padStart(2, '0');
+                    const d = String(today.getDate()).padStart(2, '0');
+                    els.date.min = `${y}-${m}-${d}`;
+
+                    // limpiar selección previa
+                    els.date.value = '';
+                    els.time.innerHTML = `<option value="" selected disabled>Selecciona hora</option>`;
+                    els.time.disabled = true;
+                    els.name.value = '';
+                    els.phone.value = '';
+                    els.email.value = '';
+
+                    // scroll suave al formulario
+                    document.getElementById('reserva').scrollIntoView({ behavior: 'smooth' });
+                });
+
+                // bloque para que al elegur el domingo de un mensaje
+                els.date?.addEventListener('change', () => {
+                    els.time.innerHTML = `<option value="" selected disabled>Selecciona hora</option>`;
+
+                    const sel = new Date(els.date.value + 'T00:00:00');
+                    const dow = sel.getDay(); // Domingos 
+                    if (dow === 0) {
+                        els.err.classList.remove('d-none');
+                        els.err.textContent = 'No atendemos los domingos. Por favor elige otro día.';
+                        els.time.disabled = true;
+                        return;
+                    } else {
+                        els.err.classList.add('d-none');
+                        els.time.disabled = false;
+                    }
+
+                    // Horarios 
+                    const openH = 10, closeH = 18, stepMin = 60;
+                    for (let h = openH; h < closeH; h++) {
+                        for (let m = 0; m < 60; m += stepMin) {
+                            const hh = String(h).padStart(2, '0');
+                            const mm = String(m).padStart(2, '0');
+                            const label = `${hh}:${mm}`;
+                            const opt = document.createElement('option');
+                            opt.value = label;
+                            opt.textContent = label;
+                            els.time.appendChild(opt);
+                        }
+                    }
+                });
+
+                // Enviar reserva
+                els.form?.addEventListener('submit', (e) => {
+                    e.preventDefault();
+
+                    if (!els.service.value || !els.date.value || !els.time.value ||
+                        !els.name.value || !els.phone.value || !els.email.value) {
+                        els.ok.classList.add('d-none');
+                        els.err.classList.remove('d-none');
+                        els.err.textContent = 'Completa todos los campos obligatorios.';
+                        return;
+                    }
+
+                    const booking = {
+                        service: els.service.value,
+                        price: els.price.value,
+                        date: els.date.value,
+                        time: els.time.value,
+                        name: els.name.value,
+                        phone: els.phone.value,
+                        email: els.email.value,
+                        createdAt: new Date().toISOString()
+                    };
+
+                    // Guardar en localStorage (luego puedes enviar a backend)
+                    const key = 'mimiBookings';
+                    const list = JSON.parse(localStorage.getItem(key) || '[]');
+                    list.push(booking);
+                    localStorage.setItem(key, JSON.stringify(list));
+
+                    els.err.classList.add('d-none');
+                    els.ok.classList.remove('d-none');
+                    // els.form.reset(); // si quisieras limpiar todo
+                });
+            })();
+        </script>
+
+        <script>
+            (() => {
+                const CURRENCY = new Intl.NumberFormat("es-CL", {
+                    style: "currency",
+                    currency: "CLP",
+                    maximumFractionDigits: 0,
+                });
+                let cart = [];
+
+                const els = {
+                    cartCount: document.getElementById("cartCount"),
+                    cartItems: document.getElementById("cartItems"),
+                    cartTotal: document.getElementById("cartTotal"),
+                    btnEmpty: document.getElementById("btnEmptyCart"),
+                    btnCheckout: document.getElementById("btnCheckout"),
+                };
+
+                function renderCart() {
+                    els.cartItems.innerHTML = "";
+                    if (cart.length === 0) {
+                        els.cartItems.innerHTML =
+                            '<li class="list-group-item text-center text-muted">Tu carrito está vacío</li>';
+                    } else {
+                        cart.forEach((item) => {
+                            const li = document.createElement("li");
+                            li.className =
+                                "list-group-item d-flex justify-content-between align-items-center";
+                            li.innerHTML = `
             ${item.name} x${item.qty}
             <span>${CURRENCY.format(item.price * item.qty)}</span>`;
-                        els.cartItems.appendChild(li);
-                    });
+                            els.cartItems.appendChild(li);
+                        });
+                    }
+                    const total = cart.reduce((acc, it) => acc + it.price * it.qty, 0);
+                    els.cartTotal.textContent = CURRENCY.format(total);
+                    els.cartCount.textContent = cart.reduce((a, b) => a + b.qty, 0);
                 }
-                const total = cart.reduce((acc, it) => acc + it.price * it.qty, 0);
-                els.cartTotal.textContent = CURRENCY.format(total);
-                els.cartCount.textContent = cart.reduce((a, b) => a + b.qty, 0);
-            }
 
-            function addToCart(product) {
-                const found = cart.find(p => p.id === product.id);
-                if (found) {
-                    found.qty++;
-                } else {
-                    cart.push({ ...product, qty: 1 });
+                function addToCart(product) {
+                    const found = cart.find((p) => p.id === product.id);
+                    if (found) {
+                        found.qty++;
+                    } else {
+                        cart.push({ ...product, qty: 1 });
+                    }
+                    renderCart();
                 }
+
+                document.addEventListener("click", (e) => {
+                    const btn = e.target.closest(".btn-add-to-cart");
+                    if (btn) {
+                        addToCart({
+                            id: btn.dataset.id,
+                            name: btn.dataset.name,
+                            price: Number(btn.dataset.price),
+                            img: btn.dataset.img,
+                        });
+                    }
+                });
+
+                els.btnEmpty.addEventListener("click", () => {
+                    cart = [];
+                    renderCart();
+                });
+                els.btnCheckout.addEventListener("click", () => {
+                    if (cart.length === 0) return alert("Carrito vacío");
+                    alert("Aquí iría el pago (simulado)");
+                });
+
                 renderCart();
-            }
-
-            document.addEventListener('click', (e) => {
-                const btn = e.target.closest('.btn-add-to-cart');
-                if (btn) {
-                    addToCart({
-                        id: btn.dataset.id,
-                        name: btn.dataset.name,
-                        price: Number(btn.dataset.price),
-                        img: btn.dataset.img
-                    });
-                }
-            });
-
-            els.btnEmpty.addEventListener('click', () => { cart = []; renderCart(); });
-            els.btnCheckout.addEventListener('click', () => {
-                if (cart.length === 0) return alert('Carrito vacío');
-                alert('Aquí iría el pago (simulado)');
-            });
-
-            renderCart();
-        })();
-    </script>
+            })();
+        </script>
 </body>
 
 </html>

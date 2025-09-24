@@ -143,3 +143,31 @@ a:hover,
   box-shadow: none;
   border-bottom: none;
 }
+
+#reserva {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 4px 16px rgba(0,0,0,.08);
+}
+
+
+/* Evita que las imágenes/cards sobresalgan y tapen lo de abajo */
+.card {
+  overflow: hidden;           /* recorta cualquier desbordamiento interno */
+}
+
+/* Asegura que la sección de reserva quede por encima de lo anterior */
+#reserva {
+  position: relative;
+  z-index: 2;                 /* súbela en la pila de apilamiento */
+}
+
+/* Por si alguna card quedó con posicionamiento raro, restablécelo */
+.card,
+.card img {
+  position: static;           /* evita que un position relativo/absoluto cause solapes */
+  display: block;
+  width: 100%;
+}
+
