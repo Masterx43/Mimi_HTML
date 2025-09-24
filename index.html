@@ -2,127 +2,113 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mimi</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mimi</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
 </head>
 
 <body>
 
-    <div class="container  cajita-fondo">
-        <div class="row mt-1 ">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light ">
-                <a class="navbar-brand text-center " href="index.html">
-                    <img src="./assets/img/mimi.logo.webp" alt="logoMimi" height="100" class="me-2">
-                </a>
+  <div class="container  cajita-fondo">
+    <div class="row mt-1 ">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+        <a class="navbar-brand text-center " href="index.html">
+          <img src="./assets/img/mimi.logo.webp" alt="logoMimi" height="100" class="me-2">
+        </a>
 
 
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
-                </div>
-            </nav>
-        </div><!--fin row-->
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+        </div>
+      </nav>
+    </div><!--fin row-->
 
-        <div class="row mt-3">
-            <div class="col">
-                <ul class="nav nav-pills nav-fill gap-2 p-1 small bg-light rounded-5 shadow-sm" id="pillNav2"
-                    role="tablist" style="--bs-nav-link-color: #242129;
-                    --bs-nav-pills-link-active-color: #ffffffe1;
-                    --bs-nav-pills-link-active-bg: #b83196f5;">
-                    <li class="nav-item" role="presentation">
-                        <a href="agendar.html">
-                            <button class="nav-link rounded-5" id="profile-tab2" data-bs-toggle="tab"
-                                data-bs-target="#tab-profile" type="button" role="tab" aria-controls="tab-profile"
-                                aria-selected="false">Agendar</button>
-                        </a>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <a href="tienda.html">
-                        <button class="nav-link rounded-5" id="contact-tab2" data-bs-toggle="tab"
-                            data-bs-target="#tab-contact" type="button" role="tab" aria-controls="tab-contact"
-                            aria-selected="false">Tienda</button>
-                            </a>
-                    </li>
-                    <li class="nav-item dropdown" role="presentation">
-                        <button class="nav-link dropdown-toggle rounded-5" id="dropdown-tab" data-bs-toggle="dropdown"
-                            type="button" role="tab" aria-expanded="false">
-                            Usuario
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdown-tab">
-                            <li>
-                                <a href="registroSesion.html">
-                                    <button class="dropdown-item" id="extra1-tab" data-bs-toggle="tab"
-                                        data-bs-target="#tab-extra1" type="button" role="tab" aria-selected="false">
-                                        Registro
-                                    </button>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="inicioSesion.html">
-                                    <button class="dropdown-item" id="extra2-tab" data-bs-toggle="tab"
-                                        data-bs-target="#tab-extra2" type="button" role="tab" aria-selected="false">
-                                        Iniciar Sesión
-                                    </button>
-                                </a>
-                            </li>
-                        </ul>
+    <div class="row mt-3">
+      <div class="col">
+        <ul class="nav nav-pills nav-fill gap-2 p-1 small bg-light rounded-5 shadow-sm mb-4" id="pillNav2">
+          <li class="nav-item">
+            <a class="nav-link rounded-5" href="agendar.html">Agendar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link rounded-5" href="tienda.html">Tienda</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle rounded-5" data-bs-toggle="dropdown" href="#" role="button"
+              aria-expanded="false">
+              Usuario
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="registroSesion.html">Registro</a></li>
+              <li><a class="dropdown-item" href="inicioSesion.html">Iniciar Sesión</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <div class="row g-4 mt-1 mb-5">
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="card h-100">
+              <img src="./assets/img/manicure01.webp" class="card-img-top fit" alt="Imagen manicure">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Manicure y Pedicure</h5>
+                <p class="card-text">Cuidado profesional para tus manos y pies. Disfruta de una experiencia relajante con manicure y pedicure que incluye limpieza, hidratación y acabado impecable para lucir siempre radiante.</p>
+                <a href="agendar.html" class="btn botonRosado mt-auto">Agendar</a>
+              </div>
             </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="card h-100">
+              <img src="./assets/img/tratamientos-capilares.jpg" class="card-img-top fit" alt="Tratamientos capilares">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Coloración y Tratamientos Capilares</h5>
+                <p class="card-text">Renueva tu estilo con servicios de coloración y tratamientos capilares. Cuida tu cabello mientras obtienes el tono perfecto, brillo duradero e hidratación profunda.</p>
+                <a href="agendar.html" class="btn botonRosado mt-auto">Agendar</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="card h-100">
+              <img src="./assets/img/brushing-y-styling.webp" class="card-img-top fit" alt="Brushing y styling">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Brushing y styling</h5>
+                <p class="card-text">Logra el look ideal con nuestros servicios de brushing y styling. Desde un liso perfecto hasta ondas definidas, realza tu estilo con acabado profesional y duradero.    
+                </p>
+                <a href="agendar.html" class="btn botonRosado mt-auto">Agendar</a>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="row mx-auto mt-2">
-            <div class="col-xl-3 col-md-3 col-sm-12 col-xs-12 text-center">
-
-
-            </div><!--Fin row-->
-            <div class="row g-4 mt-1">
-                <div class="col-12 col-md- col-xl-4">
-                    <div class="card h-100">
-                        <img src="./assets/img/manicure01.webp" class="card-img-top fit" alt="Imagen manicure">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Manicure y Pedicure</h5>
-                            <p class="card-text">Cuidado profesional para tus manos y pies. Disfruta de una experiencia
-                                relajante con manicure y pedicure que incluye limpieza, hidratación y acabado impecable
-                                para lucir siempre radiante.</p>
-                            <a href="agendar.html" class="btn botonRosado mt-auto">Agendar</a>
-                        </div>
-                    </div><!--fin card-->
-                </div><!--fin-col-->
-                <div class="col-12 col-md-6 col-xl-4">
-                    <div class="card h-100">
-                        <img src="./assets/img/tratamientos-capilares.jpg" class="card-img-top fit"
-                            alt="Imagen de tratamiento capilar">
-                        <div class="card-body">
-                            <h5 class="card-title">Coloracion y Tratamientos Capilares</h5>
-                            <p class="card-text">Renueva tu estilo con servicios de coloración y tratamientos capilares.
-                                Cuida tu cabello mientras obtienes el tono perfecto, brillo duradero e hidratación
-                                profunda.</p>
-                            <a href="agendar.html" class="btn botonRosado mt-auto">Agendar</a>
-                        </div>
-                    </div><!--fin card-->
-                </div><!--fin-col-->
-                <div class="col-12 col-md-6 col-xl-4">
-                    <div class="card h-100">
-                        <img src="./assets/img/brushing-y-styling.webp" class="card-img-top fit"
-                            alt="Imagen de brushing">
-                        <div class="card-body">
-                            <h5 class="card-title">Brushing y styling</h5>
-                            <p class="card-text">Logra el look ideal con nuestros servicios de brushing y styling. Desde
-                                un liso perfecto hasta ondas definidas, realza tu estilo con acabado profesional y
-                                duradero.</p>
-                            <a href="agendar.html" class="btn botonRosado m">Agendar</a>
-                        </div>
-                    </div><!--fin card-->
-                </div><!--fin-col-->
-            </div><!--Fin row-->
-        </div><!--fin container-->
 
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-            crossorigin="anonymous"></script>
+          integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+          crossorigin="anonymous"></script>
         <script src="https://kit.fontawesome.com/bf539c3725.js" crossorigin="anonymous"></script>
+
+        <section class="Container cajita-fondo2 sobre-nosotros">
+          <h1 class="text-center">Sobre nosotros</h1>
+        
+          <p class="text-center">En Mimi nos destacamos por ofrecer un servicio excepcional, de alta calidad y personalizado. 
+          Nos hemos esforzado por crear un ambiente relajante
+          y acogedor donde usted pueda desconectarse del estrés diario
+          disfrutas de un momento en paz, relajacióm y a la vez de cuidado personal.</p>
+
+        </section>
+
+        <footer class="text-center">
+          
+          <h4>Nos puedes encontrar en &nbsp;<i class="bi bi-instagram"></i> &nbsp;
+          <i class="bi bi-tiktok"></i> &nbsp;
+          <i class="bi bi-facebook"></i>
+          </h4>
+        </footer>
+
 
 </body>
 

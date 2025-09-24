@@ -8,6 +8,13 @@ body {
   background-color: #70527c; 
 }
 
+p {           /* salto de linea*/
+  white-space: normal;     
+  word-wrap: break-word;   
+  overflow-wrap: break-word;
+}
+
+
 /* --- Contenedor lila --- */
 .cajita-fondo {
   background-color: #ccaed0;
@@ -16,6 +23,36 @@ body {
   padding: 1.5rem;           
   border-radius: 12px;
   box-shadow: 0 4px 24px rgba(0,0,0,.12);
+}
+
+.cajita-fondo2 {
+  background-color: white;
+  width: 100%;
+  min-height: 15vh;         
+  padding: 1.5rem;           
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,.12);
+  margin-bottom: 2rem;
+}
+
+.cajita-fondo3 {
+  background-color: white;
+  width: 100%;
+  min-height: 3vh;         
+  padding: 1.5rem;           
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,.12);
+  margin-bottom: 1rem;
+}
+
+.cajita-fondo4 {
+  background-color: rgba(240, 255, 255, 0.651);
+  width: 100%;
+  min-height: 15vh;         
+  padding: 1.5rem;           
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,.12);
+  margin-bottom: 2rem;
 }
 
 /* --- Navbar centrada --- */
@@ -28,7 +65,7 @@ body {
   right: 20px; 
 }
 
-/* --- Tabs (nav-pills) --- */
+/* --- Tabs --- */
 .nav-link:hover { 
   color: #d63384; 
 }
@@ -135,6 +172,7 @@ a:hover,
 }
 
 
+
 .dropdown-toggle,
 .dropdown-toggle:hover,
 .dropdown-toggle:focus,
@@ -152,22 +190,23 @@ a:hover,
 }
 
 
-/* Evita que las imágenes/cards sobresalgan y tapen lo de abajo */
+
 .card {
-  overflow: hidden;           /* recorta cualquier desbordamiento interno */
+  overflow: hidden;          
 }
 
-/* Asegura que la sección de reserva quede por encima de lo anterior */
+
 #reserva {
   position: relative;
-  z-index: 2;                 /* súbela en la pila de apilamiento */
+  z-index: 2;                
 }
 
-/* Por si alguna card quedó con posicionamiento raro, restablécelo */
+
 .card,
 .card img {
-  position: static;           /* evita que un position relativo/absoluto cause solapes */
+  position: static;           
   display: block;
   width: 100%;
 }
+
 

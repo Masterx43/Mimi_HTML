@@ -16,7 +16,7 @@
         <div class="row mt-1">
             <nav class="navbar navbar-light bg-light w-100 px-3">
                 <a class="navbar-brand" href="index.html">
-                    <img src="./assets/img/mimi.logo.webp" alt="logoMimi" height="60" />
+                    <img src="./assets/img/mimi.logo.webp" alt="logoMimi" height="80" >
                 </a>
 
             </nav>
@@ -24,8 +24,12 @@
         <!-- /NAVBAR -->
 
         <!-- TIENDA -->
+        
         <section class="mt-4">
-            <h2 class="text-center mb-3">Agendar</h2>
+            <div class="container cajita-fondo3 "> 
+                <h2 class="text-center mb-3">Agendar</h2>
+            </div>
+            
             <div class="row g-4">
                 <!-- Servicio 1 -->
                 <div class="col-12 col-md-6 col-xl-4">
@@ -47,9 +51,9 @@
                             alt="Tratamiento Capilar" />
                         <div class="card-body text-center">
                             <h5 class="card-title">Tratamiento Capilar</h5>
-                            <p class="fw-bold mb-2">$18.990</p>
+                            <p class="fw-bold mb-2">$22.000</p>
                             <button class="btn botonRosado btn-agendar" data-service="Tratamiento Capilar"
-                                data-price="18990">Agendar</button>
+                                data-price="22000">Agendar</button>
                         </div>
                     </div>
                 </div>
@@ -60,9 +64,9 @@
                         <img src="./assets/img/brushing-y-styling.webp" class="card-img-top fit" alt="Brushing" />
                         <div class="card-body text-center">
                             <h5 class="card-title">Brushing</h5>
-                            <p class="fw-bold mb-2">$15.990</p>
+                            <p class="fw-bold mb-2">$25.990</p>
                             <button class="btn botonRosado btn-agendar" data-service="Brushing"
-                                data-price="15990">Agendar</button>
+                                data-price="25990">Agendar</button>
                         </div>
                     </div>
                 </div>
@@ -70,12 +74,12 @@
                 <!-- Servicio 4 -->
                 <div class="col-12 col-md-6 col-xl-4">
                     <div class="card h-100">
-                        <img src="./assets/img/brushing-y-styling.webp" class="card-img-top fit" alt="Coloración" />
+                        <img src="./assets/img/coloracion.webp" class="card-img-top fit" alt="Coloración" />
                         <div class="card-body text-center">
                             <h5 class="card-title">Coloración</h5>
-                            <p class="fw-bold mb-2">$25.990</p>
+                            <p class="fw-bold mb-2">$30.000</p>
                             <button class="btn botonRosado btn-agendar" data-service="Coloración"
-                                data-price="25990">Agendar</button>
+                                data-price="30000">Agendar</button>
                         </div>
                     </div>
                 </div>
@@ -83,12 +87,12 @@
                 <!-- Servicio 5 -->
                 <div class="col-12 col-md-6 col-xl-4">
                     <div class="card h-100">
-                        <img src="./assets/img/Manicure.webp" class="card-img-top fit" alt="Manicure" />
+                        <img src="./assets/img/ManicureAgendar.jpg" class="card-img-top fit" alt="Manicure" />
                         <div class="card-body text-center">
-                            <h5 class="card-title">Manicure</h5>
-                            <p class="fw-bold mb-2">$14.990</p>
+                            <h5 class="card-title">Manicure Tradicional</h5>
+                            <p class="fw-bold mb-2">$14.000</p>
                             <button class="btn botonRosado btn-agendar" data-service="Manicure"
-                                data-price="14990">Agendar</button>
+                                data-price="14000">Agendar</button>
                         </div>
                     </div>
                 </div>
@@ -96,12 +100,12 @@
                 <!-- Servicio 6 -->
                 <div class="col-12 col-md-6 col-xl-4">
                     <div class="card h-100">
-                        <img src="./assets/img/Manicure.webp" class="card-img-top fit" alt="Pedicure" />
+                        <img src="./assets/img/pedicure.jpg" class="card-img-top fit" alt="Pedicure" />
                         <div class="card-body text-center">
-                            <h5 class="card-title">Pedicure</h5>
-                            <p class="fw-bold mb-2">$14.990</p>
+                            <h5 class="card-title">Pedicure SPA Tradicional</h5>
+                            <p class="fw-bold mb-2">$20.000</p>
                             <button class="btn botonRosado btn-agendar" data-service="Pedicure"
-                                data-price="14990">Agendar</button>
+                                data-price="20000">Agendar</button>
                         </div>
                     </div>
                 </div>
@@ -109,7 +113,7 @@
 
         </section>
 
-        <!--FOrmulario de el agendar-->>
+        <!--FOrmulario de el agendar-->
         <section class="mt-5" id="reserva">
             <h3>Reservar hora</h3>
 
@@ -143,7 +147,7 @@
 
                 <div class="col-12 col-md-6">
                     <label class="form-label">Teléfono</label>
-                    <input type="tel" class="form-control" id="bkPhone" placeholder="+56 9 xxxx xxxx" required>
+                    <input type="number" class="form-control" id="bkPhone" placeholder="+56 9 xxxx xxxx" required>
                 </div>
 
                 <div class="col-12">
@@ -157,7 +161,7 @@
             </form>
 
             <div class="alert alert-success mt-3 d-none" id="bkOk">
-                ¡Reserva creada! Te contactaremos para confirmarte. ✅
+                ¡Reserva creada! Te contactaremos para confirmarte.
             </div>
             <div class="alert alert-danger mt-3 d-none" id="bkErr">
                 Revisa los datos del formulario (no atendemos domingos y debes elegir una hora válida).
@@ -270,8 +274,7 @@
                         createdAt: new Date().toISOString()
                     };
 
-                    // Guardar en localStorage (luego puedes enviar a backend)
-                    const key = 'mimiBookings';
+                    // Guardar en localStorage 
                     const list = JSON.parse(localStorage.getItem(key) || '[]');
                     list.push(booking);
                     localStorage.setItem(key, JSON.stringify(list));
