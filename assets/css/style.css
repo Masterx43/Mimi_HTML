@@ -1,10 +1,15 @@
-/* --- Colores/acento --- */
-.h-accent { color: #ccaed0; letter-spacing: 0.2px; }
+/* --- Colores*/
+.h-accent { 
+  color: #ccaed0; 
+  letter-spacing: 0.2px; 
+}
 
-body { background-color: #70527c; }
+body { 
+  background-color: #70527c; 
+}
 
 /* --- Contenedor lila --- */
-.cajita-fondo{
+.cajita-fondo {
   background-color: #ccaed0;
   width: 100%;
   min-height: 100vh;         
@@ -13,82 +18,128 @@ body { background-color: #70527c; }
   box-shadow: 0 4px 24px rgba(0,0,0,.12);
 }
 
-
-.text-yellow { color: yellow; }
-
 /* --- Navbar centrada --- */
-.navbar { justify-content: center !important; position: relative; }
+.navbar { 
+  justify-content: center; 
+  position: relative; 
+}
+.navbar-collapse { 
+  position: absolute; 
+  right: 20px; 
+}
 
-/* Si usas links en navbar-collapse, esto los empuja a la derecha */
-.navbar-collapse { position: absolute; right: 20px; }
+/* --- Tabs (nav-pills) --- */
+.nav-link:hover { 
+  color: #d63384; 
+}
+.nav-link.active:hover { 
+  color: #b02a6b; 
+}
 
-/* --- Pills (usas #pillNav2) --- */
-#pillNav2 .nav-link:hover { color: #d63384 !important; }
-#pillNav2 .nav-link.active:hover { color: #b02a6b !important; }
+/* Dropdown de Usuario */
+.dropdown-toggle,
+.dropdown-toggle:visited,
+.dropdown-toggle:focus,
+.dropdown-toggle:active,
+.dropdown-toggle.show {
+  color: #000 !important; 
+  text-decoration: none !important;
+}
 
-#pillNav2 .dropdown-toggle.active,
-#pillNav2 .dropdown.show > .dropdown-toggle,
-#pillNav2 .dropdown-toggle[aria-expanded="true"] {
-  border: 2px solid #d63384 !important;
-  color: #d63384 !important;
-  background-color: transparent !important;
+.dropdown-toggle::after {
+  border-top-color: #000 !important;
+}
+
+.dropdown-toggle.show {
+  border: 2px solid #d63384;
+  background-color: transparent;
   border-radius: 50rem;
 }
 
-
-/* --- Botón rosado --- */
-.botonRosado{
+.botonRosado {
   background-color: #d63384;
-  color: #000;
+  color: white;
   border-color: #d63384;
 }
-.botonRosado:hover{
+.botonRosado:hover {
   background-color: #d63384;
   color: #000;
   border-color: #d63384;
   filter: brightness(0.95);
 }
 
-/* --- Cards: mismas alturas + imágenes consistentes --- */
+
 .card {
   border-radius: 12px;
   box-shadow: 0 4px 16px rgba(0,0,0,.08);
 }
+.card-body { 
+  display: flex; 
+  flex-direction: column; 
+}
+.card-body .btn { 
+  margin-top: auto; 
+}
 
-/* hace que el cuerpo “empuje” el botón al fondo */
-.card-body { display: flex; flex-direction: column; }
-.card-body .btn { margin-top: auto; }
-
-/* imágenes con misma altura y recorte elegante */
+/* Imágenes de cards */
 .card-img-top.fit { 
-  height: 220px; 
-  object-fit: cover; 
-}
-
-/* Ajustes responsive a la altura de imagen si quieres más aire en pantallas grandes */
-@media (min-width: 1200px) {
-  .card-img-top.fit { height: 260px; }
-}
-
-
-/* 1) Imagen más alta y que llene (recorta si sobra) */
-.card-img-top.fit {
-  height: 320px;      /* sube a 280–360px a gusto (antes era ~220px) */
+  height: 320px;      
   width: 100%;
-  object-fit: cover;  /* usa 'contain' si no quieres recorte */
+  object-fit: cover;  
   display: block;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
 }
-
-/* 2) Variante SIN recorte (mostrará todo el producto dentro) */
 .card-img-top.fit.contain {
   object-fit: contain;
-  background: #fff;   /* ayuda si las imágenes tienen transparencia */
+  background: #fff;   
   padding: 12px;
 }
-
-/* En pantallas grandes, aún más grande si quieres */
 @media (min-width: 1200px) {
   .card-img-top.fit { height: 360px; }
+}
+
+
+a,
+.nav-link,
+.nav-link:visited {
+  color: #242129;          
+  text-decoration: none;   
+}
+a:hover,
+.nav-link:hover,
+.nav-link:focus,
+.nav-link:focus-visible {
+  text-decoration-line: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+  text-decoration-color: #d63384;  
+  outline: none;
+  box-shadow: none;
+}
+.nav-link.active {
+  text-decoration-line: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+  text-decoration-color: #000;
+  background: transparent; 
+}
+
+.btn,
+.btn:hover,
+.btn:focus,
+.botonRosado,
+.botonRosado:hover,
+.botonRosado:focus {
+  text-decoration: none;
+}
+
+
+.dropdown-toggle,
+.dropdown-toggle:hover,
+.dropdown-toggle:focus,
+.dropdown-toggle:active {
+  text-decoration: none;
+  box-shadow: none;
+  border-bottom: none;
 }
