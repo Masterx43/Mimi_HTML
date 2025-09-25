@@ -49,8 +49,9 @@ const CURRENCY = new Intl.NumberFormat('es-CL', { style: 'currency', currency: '
                     });
                 }
             });
-                /*carrito*/
-            els.btnEmpty.addEventListener('click', () => { cart = []; renderCart(); });
+                /*carrito boton vaciar*/
+            els.btnEmpty.addEventListener('click', () => { cart = []; renderCart(); }); //render limpiar
+            //pagar
             els.btnCheckout.addEventListener('click', () => {
                 if (cart.length === 0) return alert('Carrito vacío');
                 alert('Aquí iría el pago (simulado)');

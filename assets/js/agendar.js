@@ -109,5 +109,4 @@ const CLP = new Intl.NumberFormat('es-CL', { style: 'currency', currency: 'CLP',
                         alert("El telefono debe tener numeros.");
                         return;
                     }
-                    // els.form.reset(); // si quisieras limpiar todo
                 });
