@@ -198,9 +198,14 @@ a:hover,
 
 #reserva {
   position: relative;
-  z-index: 2;                
+  z-index: 2;
+  background-color: #d1cbd8;
 }
 
+#reserva .form-label{
+  font-weight: 600;
+  color: #242129;
+}
 
 .card,
 .card img {
